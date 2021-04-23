@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Mon Apr  5 19:05:26 2021 as: nmap -p- -sV -O -oN nmap.txt laboratory.htb
+Nmap scan report for laboratory.htb (10.10.10.216)
+Host is up (0.052s latency).
+Not shown: 65532 filtered ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+80/tcp  open  http    Apache httpd 2.4.41
+443/tcp open  ssl/ssl Apache httpd (SSL-only mode)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.15 - 5.6 (92%), Linux 5.0 (92%), Linux 5.0 - 5.4 (91%), Linux 5.3 - 5.4 (91%), Linux 2.6.32 (91%), Linux 5.0 - 5.3 (90%), Crestron XPanel control system (90%), Linux 5.4 (89%), ASUS RT-N56U WAP (Linux 3.4) (87%), Linux 3.1 (87%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr  5 19:13:13 2021 -- 1 IP address (1 host up) scanned in 467.87 seconds

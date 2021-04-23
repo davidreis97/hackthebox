@@ -1,0 +1,17 @@
+DBTYPE mysql
+DBHOST localhost
+DBNAME osticket
+DBUSER ost_user
+DBPASS !H3lpD3sk123!
+
+mmuser
+Crack_The_MM_Admin_PW
+127.0.0.1:3306
+mattermost
+
+maildeliverer
+Youve_G0t_Mail!
+
+root
+$2a$10$VM6EeymRxJ29r8Wjkr8Dtev0O.1STWb4.4ScG.anuu7v0EFJwgjjO
+PleaseSubscribe! -> PleaseSubscribe!21

