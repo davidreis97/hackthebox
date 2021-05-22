@@ -1,0 +1,6 @@
+Hidden staging domain: staging.love.htb
+
+File scanning vulnerable to SSRF - Used to query the endpoint localhost:5000
+
+Vote Admin Creds admin: @LoveIsInTheAir!!!! 
+
